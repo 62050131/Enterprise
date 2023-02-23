@@ -5,7 +5,7 @@
  */
 package statelesscounterclient;
 
-import java.util.Random;
+//import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.Context;
@@ -26,13 +26,13 @@ public class MyThread extends Thread{
     }
     @Override
     public void run() {
-        Random r = new Random();
-        try {
-            sleep(r.nextInt(10));
-        } catch (InterruptedException ex) {
-            Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println(" num = " + num);
+//        Random r = new Random();
+//        try {
+//            sleep(r.nextInt(10));
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        System.out.println(" num = " + num);
         System.out.println(num + " Fahrenheit = " + counterBean.fToC(num)+" Celsius");
     }
     
